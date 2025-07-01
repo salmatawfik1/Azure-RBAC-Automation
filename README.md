@@ -1,12 +1,11 @@
 - This project simulates Role-Based Access Control (RBAC) automation in Microsoft Azure using Python. It allows dynamic role assignments, simulates access attempts based on roles, and manages privilege hierarchy.
-
-🔐 Built as part of a security demo on RBAC, this tool uses the Azure SDK to manage real resources via Azure’s Authorization and Resource Management APIs.
+- Built as part of a security demo on RBAC, this tool uses the Azure SDK to manage real resources via Azure’s Authorization and Resource Management APIs.
 
 🚀 Features:
-✅ Role Assignment Automation: Assign roles (Reader, Contributor, Owner) to users programmatically
-🔄 Privilege Hierarchy: Auto-upgrades and revokes old roles when a higher one is assigned
-📡 Real Azure Integration: Uses DefaultAzureCredential and interacts with actual Azure subscriptions
-🧪 Simulates user actions like:
+- Role Assignment Automation: Assign roles (Reader, Contributor, Owner) to users programmatically
+- Privilege Hierarchy: Auto-upgrades and revokes old roles when a higher one is assigned
+- Real Azure Integration: Uses DefaultAzureCredential and interacts with actual Azure subscriptions
+- Simulates user actions like:
     - Reading the resource group (All 3 roles can read the resource group)
     - Modifying the resource group (requires a contributor or owner role)
     - Deleting the resource group (only the owner can delete the resource group)
