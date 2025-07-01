@@ -6,7 +6,7 @@
 - Real Azure Integration: Uses DefaultAzureCredential and interacts with actual Azure subscriptions
 - RBAC Implementation:
    - Properly handles role hierarchy (Reader < Contributor < Owner)
-   - Implements Privilege Hierarchy by Auto-upgrading and revokeing old roles when a higher one is assigned
+   - Implements Privilege Hierarchy by Auto-upgrading and revoking old roles when a higher one is assigned
    - Validates against duplicate or lower-ranked role assignments
 - Simulates user actions like:
    - 📖 Reading the resource group → allowed for all roles
