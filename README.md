@@ -13,7 +13,10 @@
 ⚠ Disclaimer: 
    - All values in this repository (user UUIDs, subscription IDs, etc.) are dummy placeholders.
    - No real identities or secrets are exposed.
-   - Replace "AZURE_SUBSCRIPTION_ID" with your real subscription ID, "RBACDemo" with your resource group name, "USER A/B/C" with real usernames and their subscription IDs.
+   - Replace:
+     - "AZURE_SUBSCRIPTION_ID" with your real Azure subscription ID
+     - "RBACDemo" with your resource group name
+     - "UserA/B/C" with actual usernames and their object IDs
 
 📌 Future Improvements:
    - Import users/roles from YAML or CSV file
