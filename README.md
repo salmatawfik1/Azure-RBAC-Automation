@@ -3,13 +3,23 @@
 
 🚀 Features:
 - Role Assignment Automation: Assign roles (Reader, Contributor, Owner) to users programmatically
-- Privilege Hierarchy: Auto-upgrades and revokes old roles when a higher one is assigned
 - Real Azure Integration: Uses DefaultAzureCredential and interacts with actual Azure subscriptions
+- RBAC Implementation:
+   - Properly handles role hierarchy (Reader < Contributor < Owner)
+   - Implements Privilege Hierarchy by Auto-upgrading and revokeing old roles when a higher one is assigned
+   - Validates against duplicate or lower-ranked role assignments
 - Simulates user actions like:
    - 📖 Reading the resource group → allowed for all roles
    - 🛠 Modifying the resource group → requires Contributor or Owner
    - 🗑 Deleting the resource group → requires Owner only
-
+- Error Handling:
+   - Includes try-catch blocks for Azure operations with meaningful error messages.
+   - Checks if the resource group exists (creates it if not)
+- User Experience:
+   - Interactive command-line interface
+   - Color-coded output for better visibility
+   - Clear success/failure messages
+  
 ⚠ Disclaimer: 
    - All values in this repository (user UUIDs, subscription IDs, etc.) are dummy placeholders.
    - No real identities or secrets are exposed.
