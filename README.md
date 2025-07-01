@@ -15,9 +15,11 @@
    - No real identities or secrets are exposed.
    - Replace "AZURE_SUBSCRIPTION_ID" with your real subscription ID, "RBACDemo" with your resource group name, "USER A/B/C" with real usernames and their subscription IDs.
 
-📌 Possible Improvements:
+📌 Future Improvements:
    - Import users/roles from YAML or CSV file
    - Add logging (e.g., access logs, assignment logs)
    - Export user-role mappings to CSV
    - Support bulk assignment via CLI args
    - Add role expiration (e.g., temporary access window)
+
+Feel free to reach out if you'd like to collaborate, discuss improvements, or have questions about Azure IAM: salmatawfik.39@gmail.com
