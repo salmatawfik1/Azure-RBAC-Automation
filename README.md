@@ -6,9 +6,9 @@
 - Privilege Hierarchy: Auto-upgrades and revokes old roles when a higher one is assigned
 - Real Azure Integration: Uses DefaultAzureCredential and interacts with actual Azure subscriptions
 - Simulates user actions like:
-    - Reading the resource group (All 3 roles can read the resource group)
-    - Modifying the resource group (requires a contributor or owner role)
-    - Deleting the resource group (only the owner can delete the resource group)
+   - 📖 Reading the resource group → allowed for all roles
+   - 🛠 Modifying the resource group → requires Contributor or Owner
+   - 🗑 Deleting the resource group → requires Owner only
 
 ⚠ Disclaimer: 
    - All values in this repository (user UUIDs, subscription IDs, etc.) are dummy placeholders.
